@@ -17,6 +17,7 @@ function deleteInputValue() {
 }
 
 createBtn.addEventListener("click", () => {
+  destroyBoxes();
   createBoxes();
   deleteInputValue();
 });
@@ -44,6 +45,3 @@ function destroyBoxes() {
   divBoxes.innerHTML = "";
 }
 
-amount.addEventListener("change", () => {
-  divBoxes.innerHTML = "";
-});
