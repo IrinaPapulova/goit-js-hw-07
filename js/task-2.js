@@ -32,7 +32,8 @@ const galleryMarkup = images.map(({ url, alt }) => {
   img.src = url;
   img.alt = alt;
   img.width = "320";
+
   return `<li> ${img.outerHTML} </li>`;
 });
 
-gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+gallery.insertAdjacentHTML("beforeend", galleryMarkup.join(""));
